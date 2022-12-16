@@ -32,7 +32,7 @@ jobs:
           npm run build --if-present
           npm test
       - name: deploy to gh-pages
-        uses: patelravi8899/pipeline@v3
+        uses: patelravi8899/pipeline@latest
         with:
           deploy_key: ${{secrets.ACTIONS_DEPLOY_KEY}}
           publish_dir: ./build     
